@@ -1,7 +1,16 @@
 .logo {
   height: 90px; 
 }
-
+@media screen and (max-width: 600px) {
+            /* Example styles for adjusting navigation menu */
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 5px;
+            }
+        }
 .header-container {
     display: flex;
     align-items: center;
