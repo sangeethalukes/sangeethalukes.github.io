@@ -1,0 +1,460 @@
+.logo {
+  height: 90px; 
+}
+.header-text {
+  flex: 1;
+  color: #002152;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-right: 50px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top of the viewport */
+z-index: 1000; 
+background-color: #fff;
+
+}
+nav {
+  overflow: hidden;
+  text-align: right;
+}
+
+nav a {
+  display: inline-block;
+  color: #000000;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+  background-color:#133A74;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  padding: 30px 30px;
+}
+.line{
+  border: 1px solid black; /* Set the border style */
+  
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000;
+    background-color: #fff; /* Adjust this value as needed */
+  }
+  
+  .logo {
+    width: 75px;
+    height: 75px; /* Set smaller width for the logo on mobile devices */
+  }
+
+  .header-text {
+    display:inline-flex; /* Ensure header text is displayed inline */
+    font-size: 20px;
+    margin-right: 1px;
+    /* Adjust the font size of the header text */ /* Add spacing between the header text and the button */
+  }
+
+  .butt {
+    display: inline-block; /* Ensure button is displayed inline */
+    padding: 15px 20px; /* Blue color for the button */
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 20px;
+    cursor: pointer;
+    background-image: url('Images/menu.png'); /* Add the path to your image */
+    background-size: cover;
+    background-position: center;
+  }
+  nav a {
+    display: none;
+  }
+
+  /* Style for the navigation list */
+  #navList {
+    overflow: hidden;
+    display: none; /* Initially hide the navigation list */
+    position: absolute; /* Position the dropdown list */
+    top: 100%; /* Align the top of the list with the bottom of the button */
+    left: 200px; /* Position the list to the left of the button */
+   /* Align the left of the list with the left of the button */
+    width: 100%; /* Make the dropdown list as wide as the button */
+    background-color: #fff; /* Adjust background color */
+    border: 1px solid #ddd; /* Add border */
+    border-top: none; /* Center the list items */
+  }
+
+  /* Style for the navigation links */
+  #navList a {
+    display: block;
+    padding: 10px 10px;
+    color: #333; /* Dark color for the navigation links */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    text-align: left; /* Smooth transition for background color */
+  }
+
+  /* Hover effect for navigation links */
+  #navList a:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+  }
+}
+
+
+  @media screen and (max-width: 767px) {
+    .bgcolor {
+      height: 500px; /* Adjust the height for mobile devices */
+    }
+    
+
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Set the width to 100% of the viewport width */
+  max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+  margin: 0 auto;
+  }
+  #typed-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 70px;
+    border-right: 2px solid ; /* Cursor border style */
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+ @media screen and (max-width: 767px) {
+  #typed-text{
+    font-family: 'Arial', sans-serif;
+    font-size: 70px;
+    border-right: 2px solid ; /* Cursor border style */
+    white-space: nowrap;
+  top: 50%; /* Position the text at the vertical center */
+  left: 50%;
+  height: 50vh;
+  text-align: center;
+    color: #ffffff;
+  }
+ }
+  
+  #cursor {
+    display: inline-block;
+    vertical-align: middle;
+    animation: blink 0.8s infinite;
+  }
+  @keyframes blink {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000; /* Cursor color */
+    }
+  }
+
+  .contact-box {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 40px;
+    box-sizing: border-box;
+    margin-top: -60px;
+    
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 50px;
+  
+}
+.sercont{
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+  width: 30%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.service img {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Style for service titles */
+.service h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Style for service links */
+.service h3 a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Hover effect for service links */
+.service h3 a:hover {
+  text-decoration: underline;
+}
+.service:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  /* why*/
+  .why-home-physio {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .why-home-physio h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .why-home-physio p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .why-home-physio ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .why-home-physio li {
+    flex: 1 1 300px;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .why-home-physio li:hover {
+    transform: scale(1.05);
+  }
+
+  
+
+  /*Doctor*/
+  .doctor-bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    background-color: #ffffff;
+    margin-top: 50px;
+  }
+  
+  .doctor-bio img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a modern look */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition on hover */
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .doctor-bio img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover for an interactive effect */
+  }
+  
+  .doctor-bio h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    margin-top: -70px;
+    margin-left: 70px;
+  }
+  
+  .doctor-bio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  
+  /*map*/
+  .home-physio-map {
+    display: flex;
+    align-items: center;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  .home-physio-map h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .home-physio-map p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .home-physio-map ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .home-physio-map li {
+    flex: 300px;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  #map {
+    width: 60%; 
+    height: 450px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: -150px; 
+    margin-right: 80px;
+    width: 50%; /* Set the width of the map container */
+  float: right;
+  }
+  
+  
+  #map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .home-physio-map {
+      display: inline-block;
+    }
+    #map {
+      
+      height: 450px;
+      
+      margin: 20px;
+      
+      width: 100%; /* Set the width of the map container */
+    } 
+    #map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    }
+  
+  
+  
+  
+  
+  /*Footer*/
+  footer {
+    background-color: #133A74;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+.footer-sectionabout{
+  margin-right: 20px;
+}
+.footer-section h2 {
+    font-size: 18px;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}

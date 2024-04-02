@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Physiotherapy Services Wales</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body id="home-page" >
+<div class="header-container">
+      <img class="logo" src="HPSW.jpg" alt="Home Physiotherapy Services" class="logo">
+      <h1 class="header-text"><b>HOME PHYSIOTHERAPY SERVICES</b></h1>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Services.html">Services</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+  <div id="mobileContent" style="display: none;">
+    <!-- HTML content for mobile view -->
+    <button class="butt" onclick="toggleNav()"></button>
+    <nav id="navList">
+      <a href="index.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<script>
+  // JavaScript to toggle navigation list on mobile
+  function toggleNav() {
+    var navList = document.getElementById("navList");
+    if (navList.style.display === "none" || navList.style.display === "") {
+      navList.style.display = "block";
+    } else {
+      navList.style.display = "none";
+    }
+  }
+  
+  // JavaScript to show content only on mobile
+  if (window.innerWidth <= 767) { // Adjust the breakpoint as needed
+    document.getElementById("mobileContent").style.display = "block";
+  }
+  </script>
+  
+
+  <div class ="bgcolor" style="background-image: url(phy_banner.jpeg); background-size: cover;">
+  
+  
+    <div id="typed-text"></div>
+    <script>
+      const textList = ["In-Home Healing.", "Your Place, Physio Space.", "Your Well-being, our Priority."];
+      let textIndex = 0;
+      let charIndex = 0;
+      const speed = 150; // typing speed 
+    
+      function type() {
+        const textElement = document.getElementById("typed-text");
+        const currentText = textList[textIndex];
+        
+        if (charIndex < currentText.length) {
+          textElement.innerHTML += currentText.charAt(charIndex);
+          charIndex++;
+          setTimeout(type, speed);
+        } else {
+          setTimeout(erase, 1500); // pause time
+        }
+      }
+    
+      function erase() {
+        const textElement = document.getElementById("typed-text");
+        
+        if (charIndex > 0) {
+          textElement.innerHTML = textList[textIndex].substring(0, charIndex - 1);
+          charIndex--;
+          setTimeout(erase, speed / 2);
+        } else {
+          textIndex = (textIndex + 1) % textList.length; // move to the next text
+          setTimeout(type, speed / 2);
+        }
+      }
+    
+      // Adjust font size based on viewport scale
+      function adjustFontSize() {
+        const textElement = document.getElementById("typed-text");
+        const viewportScale = 2; // Set the scale factor here (based on your meta viewport)
+        const initialFontSize = parseFloat(window.getComputedStyle(textElement).fontSize); // Get initial font size in pixels
+        const scaledFontSize = initialFontSize / viewportScale; // Calculate scaled font size
+    
+        textElement.style.fontSize = `${scaledFontSize}px`; // Set scaled font size
+      }
+    
+      // Call adjustFontSize once when the page is loaded
+      document.addEventListener("DOMContentLoaded", function() {
+        type(); // Start typing animation
+        adjustFontSize(); // Adjust font size initially
+      });
+    </script>
+    
+    
+</div>
+<!--contact box -->
+<div class="spac"></div>
+<div class="contact-box">
+  <div class="contact-info">
+    <h3>Call</h3>
+    <p>Phone: +123 456 789</p>
+  </div>
+
+  <div class="contact-info">
+    <h3>Message</h3>
+    <p>Email: hello@example.com</p>
+  </div>
+
+</div>
+
+<!--Why home physio?-->
+<section class="why-home-physio">
+  <h2>Unlock the Benefits of Home Physiotherapy</h2>
+  <p>Choosing home physiotherapy provides unique advantages over traditional clinic-based sessions. Embrace personalized care in your space:</p>
+  <ul>
+    <li>Get tailored, one-on-one attention from a certified physiotherapist at home.</li>
+    <li>Receive a customized treatment plan to fit your unique environment and lifestyle.</li>
+    <li>Get expert guidance on safely performing exercises and activities in your home.</li>
+  </ul>
+</section>
+
+<!-- Google Maps API -->
+<section class="home-physio-map">
+  <div class="maptext">
+  <h2>Where We Offer Home Physiotherapy</h2>
+  <p>We offer home physiotherapy services in the following areas:</p>
+  <ul>
+    <li>Aberaeron</li>
+    <li>Aberporth</li>
+    <li>Aberystwyth</li>
+    <li>Borth</li>
+    <li>Cardigan</li>
+    <li>Lampeter</li>
+    <li>Llanarth</li>
+    <li>Llanddewi Brefi</li>
+    <li>Llandysul</li>
+    <li>Llanilar</li>
+    <li>Llanrhystud</li>
+    <li>Llanon</li>
+    <li>New Quay</li>
+    <li>Tregaron</li>
+
+  </ul>
+</div>
+  <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242546.52031482937!2d-4.464080877266846!3d52.290594427012806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486f042bbaa28371%3A0x4da55e66973e30d7!2sCeredigion%2C%20UK!5e0!3m2!1sen!2sin!4v1709575598118!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+<!-- Services -->
+<div class="sercont">
+<h2 class="Ser" style="text-align: center; font-size: 32px;">Services We Offer</h2>
+<div class="services-container">
+    <div class="service">
+      <a href="MusculoskeletalInjuryRehabilitation.html"><img src="pysio.jpeg" alt="Service 1"></a>
+        <h3><a href="MusculoskeletalInjuryRehabilitation.html" style="color: black;">Musculoskeletal Injury Rehabilitation</a></h3>
+    </div>
+    <div class="service">
+        <a href="OperativeOrthopaedicRehabilitation.html"><img src="cup.jpeg" alt="Service 2"></a>
+        <h3><a href="OperativeOrthopaedicRehabilitation.html">Operative Orthopaedic Rehabilitation</a></h3>
+    </div>
+    <div class="service">
+        <a href="FallsAssessmentPreventionandRehabilitation.html"><img src="rehab.jpg" alt="Service 3"></a>
+        <h3><a href="FallsAssessmentPreventionandRehabilitation.html">Falls Assessment, Prevention, and Rehabilitation</a></h3>
+    </div>
+</div>
+<div class="services-container">
+    <div class="service">
+        <a href="RehabilitationforElderlyFrailty.html"><img src="rehab.jpg" alt="Service 3"></a>
+        <h3><a href="RehabilitationforElderlyFrailty.html">Rehabilitation for Elderly Frailty</a></h3>
+    </div>
+    <div class="service">
+        <a href="NeurologicalRehabilitation.html"><img src="rehab.jpg" alt="Service 3"></a>
+        <h3><a href="NeurologicalRehabilitation.html">Neurological Rehabilitation</a></h3>
+    </div>
+</div>
+</div>
+<!-- doctor -->
+<section class="doctor-bio">
+  <img src="Rajeev.webp" alt="Dr. John Doe">
+  <div>
+    <h2>Dr. Rajeev Chinta</h2>
+  </div>
+</section>
+
+</body>
+<footer>
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-sectionabout">
+              <h2>About Us</h2>
+              <p>mission statement.</p>
+          </div>
+          <div class="footer-section links">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="Services.html">Services</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <h2>Contact Us</h2>
+              <p>Email: info@example.com</p>
+              <p>Phone: +123-456-7890</p>
+          </div>
+      </div>
+  </div>
+</footer>
+</html>

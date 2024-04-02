@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurological Rehabilitation</title>
+    <link  rel="stylesheet" href="About.css"/>
+</head>
+<body>
+    <div class="header-container">
+        <img class="logo" src="Images/HPSW.jpg" alt="Home Physiotherapy Services" class="logo">
+        <h1 class="header-text"><b>HOME PHYSIOTHERAPY SERVICES</b></h1>
+    
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="Services.html">Services</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <div id="mobileContent" style="display: none;">
+      <!-- HTML content for mobile view -->
+      <button class="butt" onclick="toggleNav()"></button>
+      <nav id="navList">
+        <a href="Home.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript to toggle navigation list on mobile
+    function toggleNav() {
+      var navList = document.getElementById("navList");
+      if (navList.style.display === "none" || navList.style.display === "") {
+        navList.style.display = "block";
+      } else {
+        navList.style.display = "none";
+      }
+    }
+    
+    // JavaScript to show content only on mobile
+    if (window.innerWidth <= 767) { // Adjust the breakpoint as needed
+      document.getElementById("mobileContent").style.display = "block";
+    }
+    </script>
+<div class="Neuro" id="NeurologicalRehabilitation">
+    <h1>Neurological Rehabilitation</h1>
+    <p>Our neurological rehabilitation program is designed with a holistic approach to address the unique challenges faced by individuals with neurological conditions.</p>
+
+    <h2>Overview of Our Program:</h2>
+    <ul>
+        <li><strong>Comprehensive Assessment:</strong> Our initial step involves conducting detailed evaluations to gain a deep understanding of the individual's neurological status. This includes assessing motor functions, sensation, balance, coordination, and cognitive abilities, ensuring a thorough understanding of the patient's condition.</li>
+        <li><strong>Individualized Treatment Plans:</strong> Utilizing the insights gained from our assessments, we craft personalized treatment plans. These plans are tailored to meet the specific needs and objectives of each individual, focusing on achieving the best possible outcomes.</li>
+        <li><strong>Neuromuscular Re-Education:</strong> A key component of our program is neuromuscular re-education. This involves retraining the nervous system to regain control over movement and coordination, utilizing specialized exercises and techniques to restore normal patterns of movement and muscle function.</li>
+        <li><strong>Gait and Balance Training:</strong> To enhance mobility, we offer gait training aimed at improving walking patterns. Alongside, our balance exercises are designed to bolster stability and minimize the risk of falls, crucial aspects of regaining independence.</li>
+        <li><strong>Functional Rehabilitation:</strong> Our rehabilitation efforts are goal-oriented, focusing on enhancing the ability to perform daily living activities such as dressing, grooming, eating, and general mobility. We aim to restore as much independence as possible through targeted interventions.</li>
+    </ul>
+
+    <h2>Common Conditions We Treat:</h2>
+    <p>We provide comprehensive rehabilitation services for a variety of neurological conditions, including:</p>
+    <ul>
+        <li>Stroke (Cerebrovascular Accident): Tailored rehabilitation to aid recovery from the physical, cognitive, and emotional impacts of a stroke.</li>
+        <li>Traumatic Brain Injury (TBI): Personalized approaches to address the wide range of outcomes associated with TBI.</li>
+        <li>Spinal Cord Injury (SCI): Focused strategies to improve function and quality of life following SCI.</li>
+        <li>Parkinson's Disease: Customized exercises and therapies to manage symptoms and enhance movement.</li>
+        <li>Bell's Palsy: Targeted treatments to restore facial muscle function and symmetry.</li>
+    </ul>
+
+    <p>Our dedicated team is committed to providing comprehensive support, guiding patients through their recovery journey towards regaining their maximum potential and improving their quality of life.</p>
+</div>
+
+
+
+
+
+   
+</body>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-sectionabout">
+                <h2>About Us</h2>
+                <p>mission statement.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123-456-7890</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+</html>
