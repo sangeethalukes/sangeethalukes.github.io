@@ -70,7 +70,7 @@ nav a:hover {
     border-radius: 2px;
     margin: 20px;
     cursor: pointer;
-    background-image: url('Images/menu.png'); /* Add the path to your image */
+    background-image: url('menu.png'); /* Add the path to your image */
     background-size: cover;
     background-position: center;
   }
