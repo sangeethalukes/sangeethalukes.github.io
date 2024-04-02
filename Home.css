@@ -58,10 +58,9 @@ nav a:hover {
   }
 
   .header-text {
-    display:inline-flex; /* Ensure header text is displayed inline */
-    font-size: 20px;
-    margin-right: 1px;
-    /* Adjust the font size of the header text */ /* Add spacing between the header text and the button */
+    display: flex; /* Ensure header text is displayed inline */
+    font-size: 15px;
+    margin-right: 100px; /* Adjust the font size of the header text */ /* Add spacing between the header text and the button */
   }
 
   .butt {
