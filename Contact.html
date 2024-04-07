@@ -63,35 +63,6 @@
         </div>
     </div>
 
-    <script >
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Get form data
-    var formData = new FormData(this);
-
-    // Send form data to backend
-    fetch('/contact', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert(data.message);
-            document.getElementById('contactForm').reset(); // Clear form fields on successful submission
-        } else {
-            alert('Failed to send message. Please try again later.');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('An error occurred. Please try again later.');
-    });
-});
-
-    </script>
-
 
 </div>
 </body>
