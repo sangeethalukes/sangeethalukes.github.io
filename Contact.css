@@ -51,12 +51,6 @@ nav a:hover {
     z-index: 1000;
     background-color: #fff;
    
-.form-input{ 
-  width: 80vw;
-}
-.formr img{
-  display: none;
-} 
   }/* Adjust this value as needed */
   }
   
@@ -122,6 +116,14 @@ nav a:hover {
 }
 body {
   font-family: Arial, sans-serif;
+}
+@media(max-width:800px) {
+.form-input{ 
+  width: 80vw;
+}
+.formr{
+  display:none;
+} 
 }
 .Fullcon{
   align-items: center;
