@@ -81,9 +81,9 @@ nav a:hover {
   /* Style for the navigation list */
   #navList {
     overflow: hidden;
-    display: none; /* Initially hide the navigation list */
-    position: absolute; /* Position the dropdown list */
-    top: 100%; /* Align the top of the list with the bottom of the button */
+    display: none; 
+    position: absolute;
+    top: 100%;
     left: 200px; /* Position the list to the left of the button */
    /* Align the left of the list with the left of the button */
     width: 100%; /* Make the dropdown list as wide as the button */
@@ -119,13 +119,13 @@ nav a:hover {
   
   padding: 20px;
   background-color: #fff;
-  
+
   overflow: auto; /* To clear floats */
 }
 .bcontainer img {
-    float: left;
+    float: right;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
     max-width: 600px;
     
 }
