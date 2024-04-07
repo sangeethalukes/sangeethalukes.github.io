@@ -182,7 +182,7 @@ border-radius: 50px;
   width:500px;
   border-radius: 25px;
 }
-@media(max-width:800px) {
+@media screen and (max-width: 767px){
 .contact-inputs{ 
   width: 80vw;
 }
