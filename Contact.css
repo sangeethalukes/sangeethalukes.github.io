@@ -182,11 +182,11 @@ border-radius: 50px;
   width:500px;
   border-radius: 25px;
 }
-@media screen and (max-width: 767px){
-.contact-inputs{ 
+@media(max-width:800px){
+.form-input{ 
   width: 80vw;
 }
-.contact-right{
+.formr{
   display:none;
 } 
 }
