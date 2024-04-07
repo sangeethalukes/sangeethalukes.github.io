@@ -46,18 +46,21 @@
       document.getElementById("mobileContent").style.display = "block";
     }
     </script>
-<div class="bcol">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <form id="contactForm" action="/send-email" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
+    <div class="Fullcon">
+        <form action="https://api.web3forms.com/submit" method="POST" class="forml">
+            <div class="forml-title">
+                <h2>Get in Touch</h2>
+                <hr> 
+            </div>
+            <input type="hidden" name="access_key" value="27a4dc0d-5b1a-4f37-9ed4-9c249a015930">
+            <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+            <textarea name="message" placeholder="Your Message" class="form-input" required></textarea>
+            <button type="submit" >Submit<img src="arrow_icon.png"></button>
         </form>
+        <div class="formr">
+            <img src="git.png">
+        </div>
     </div>
 
     <script >
