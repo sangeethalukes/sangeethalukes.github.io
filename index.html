@@ -7,16 +7,27 @@
     <link rel="stylesheet" href="Home.css">
 </head>
 <body id="home-page" >
-<div class="header-container">
-      <img class="logo" src="HPSW.jpg" alt="Home Physiotherapy Services" class="logo">
-      <h1 class="header-text"><b>HOME PHYSIOTHERAPY SERVICES</b></h1>
   
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="Services.html">Services</a>
-    <a href="About.html">About</a>
-    <a href="Contact.html">Contact</a>
-  </nav>
+<div class="header-container" id="header-container">
+  <div class="title-container">
+    <h1 class="title" alt="title" id="title">Home Physiotherapy Services Wales</h1>
+    </div>
+      <img class="logo" src="ologo.png" alt="Home Physiotherapy Services" class="logo">
+      <img class="logo1" src="word.png" alt="Home Physiotherapy Services1" class="logo1">
+       <!-- <img class="top-image" src="menu.png" alt="TopImage">-->
+       
+        <nav>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+          </div>
+          <a href="index.html">Home</a>
+          <a href="Services.html">Services</a>
+          <a href="About.html">About</a>
+          <a href="Contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
   <div id="mobileContent" style="display: none;">
     <!-- HTML content for mobile view -->
     <button class="butt" onclick="toggleNav()"></button>
@@ -27,8 +38,36 @@
       <a href="Contact.html">Contact</a>
     </nav>
   </div>
-</div>
 
+
+  <script>
+    // When the user scrolls down 50px from the top of the document, resize the header and logo
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      var headerContainer = document.getElementById("header-container");
+      var logo = document.getElementsByClassName("logo")[0];
+      var title = document.getElementById("title");
+      var logo1 = document.getElementsByClassName("logo1")[0];
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        
+        logo.style.height = "100px";
+        logo.style.width = "100px";
+        logo1.style.height = "90px";
+        logo1.style.width = "90px";
+        title.style.display = "none";
+      } else {
+        
+        logo.style.height = "180px";
+        logo.style.width = "180px";
+        logo1.style.height = "140px";
+        logo1.style.width = "140px";
+        title.style.display = "block";
+      }
+    }
+</script>
+
+  
 <script>
   // JavaScript to toggle navigation list on mobile
   function toggleNav() {
@@ -107,14 +146,14 @@
 <div class="contact-box">
   <div class="contact-info">
     <h3>Call</h3>
-    <p>Phone: +123 456 789</p>
+    <p>Phone: <a href="tel:+4407565136488">+44 07565 136488</a></p>
   </div>
-
+  
   <div class="contact-info">
     <h3>Message</h3>
-    <p>Email: hello@example.com</p>
+    <p>Email: <a href="mailto:Homephysioservices@hotmail.com">Homephysioservices@hotmail.com</a></p>
   </div>
-
+  
 </div>
 
 <!--Why home physio?-->
@@ -157,7 +196,7 @@
 </section>
 <!-- Services -->
 <div class="sercont">
-<h2 class="Ser" style="text-align: center; font-size: 32px;">Services We Offer</h2>
+<h2 class="Ser">Services We Offer</h2>
 <div class="services-container">
     <div class="service">
       <a href="MusculoskeletalInjuryRehabilitation.html"><img src="Musculo.jpg" alt="Service 1"></a>
@@ -174,7 +213,7 @@
 </div>
 <div class="services-container">
     <div class="service">
-        <a href="RehabilitationforElderlyFrailty.html"><img src="Rehabel.jpg" alt="Service 3"></a>
+        <a href="RehabilitationforElderlyFrailty.html"><img src="rehabel.jpg" alt="Service 3"></a>
         <h3><a href="RehabilitationforElderlyFrailty.html">Rehabilitation for Elderly Frailty</a></h3>
     </div>
     <div class="service">
@@ -185,7 +224,9 @@
 </div>
 <!-- doctor -->
 <section class="doctor-bio">
-  <img src="Rajeev.webp" alt="Dr. John Doe">
+   <div class="doctor-image">
+    <img src="Rajeev.webp" alt="Dr. Rajeev Chinta">
+  </div>
   <div>
     <h2>Rajeev Chinta</h2>
     <p>I am Rajeev, a dedicated physiotherapist with over 20 years of experience in both NHS and private settings helping people achieve their full potential and live pain-free lives. I am passionate about providing high-quality, individualized care to patients of all ages and backgrounds.</p>
@@ -197,8 +238,8 @@
   <div class="container">
       <div class="footer-content">
           <div class="footer-sectionabout">
-              <h2>About Us</h2>
-              <p>Recover at home with us.</p>
+              <h2>Mission</h2>
+              <p>Empowering Recovery, One Home at a Time.</p>
           </div>
           <div class="footer-section links">
               <h2>Quick Links</h2>
@@ -211,10 +252,13 @@
           </div>
           <div class="footer-section contact">
               <h2>Contact Us</h2>
-              <p>Email: info@example.com</p>
-              <p>Phone: +123-456-7890</p>
+              <p>Email: <a href="mailto:Homephysioservices@hotmail.com">Homephysioservices@hotmail.com</a></p>
+              <p>Phone: <a href="tel:+4407565136488">+44 07565 136488</a></p>
           </div>
       </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Home Physiotherapy Services Wales. All rights reserved.</p>
   </div>
 </footer>
 </html>
