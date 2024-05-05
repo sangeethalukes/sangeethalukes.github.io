@@ -1,41 +1,85 @@
 .logo {
-  height: 90px; 
+  height: 140px; 
+  width: 140px;
+  transition: 0.2s;
+  margin-top: -30px;
+  top: 0;
 }
-.header-text {
-  flex: 1;
-  color: #002152;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  margin-right: 50px;
+.logo1 {
+  height: 140px; 
+  width: 140px;
+  transition: 0.2s;
+  margin-top: -40px;
+  top: 0;
 }
-.header-container {
-  display: flex;
-  align-items: center;
-  position: sticky; /* Make the header sticky */
-  top: 0; /* Stick to the top of the viewport */
-z-index: 1000; 
-background-color: #fff;
+.title{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: -30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.top-image {
+  height: 100px;
+  transition: 0.2s;
+}
 
+.header-container{
+  position: fixed;
+  top:0;
+  width:100%;
+  background-color:white;
+  padding: 20px 10px;
+   /* Align logo and top image to the left and right respectively */
+    align-items: center;
+    box-shadow: 1px 5px 20px #b1b1b1;
 }
+
 nav {
   overflow: hidden;
-  text-align: right;
+  text-align: center;
+  top: 0;
+  margin-top: -90px;
+  margin-bottom: -10px;
 }
 
 nav a {
   display: inline-block;
-  color: #000000;
+  color: #777777;
   text-align: center;
-  padding: 30px 30px;
+  padding: 20px 20px;
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
+  margin: 0;
 }
 
 nav a:hover {
-  background-color:#133A74;
+  
   opacity: 1;
-  color: rgb(255, 255, 255);
-  padding: 30px 30px;
+  color: #9F6CDA;
+  padding: 20px 20px;
+  border-bottom: 2px solid #9F6CDA;
+  
+}
+.social-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  margin: 0 5px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+.social-icons a:hover {
+  border-bottom:none;
 }
 .line{
   border: 1px solid black; /* Set the border style */
@@ -117,8 +161,9 @@ nav a:hover {
 
 /* Default background image */
 .bgcolor {
-  background-image: url(nback.jpg); /* Path to default background image */
+  background-image: url(purple.jpg); /* Path to default background image */
   background-size: cover;
+  margin-top: 120px;
 }
 
 /* Media query for mobile devices */
@@ -141,12 +186,12 @@ nav a:hover {
   }
   #typed-text {
     font-family: 'Arial', sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     border-right: 2px solid ; /* Cursor border style */
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
-    color: #ffffff;
+    color: #95BD41;
     
     display: flex;
     justify-content: center;
@@ -184,7 +229,7 @@ nav a:hover {
   .contact-box {
     display: flex;
     justify-content: space-around;
-    background-color: #f5f5f5;
+    background-color: #D1C9D8;
     padding: 20px;
     border: 1px solid #ccc;
     margin: 40px;
@@ -198,6 +243,13 @@ nav a:hover {
     margin-top: -20px;
     margin-bottom: -20px;
   }
+  .contact-info a {
+    color:#9F6CDA;
+  }
+  .contact-info a:hover {
+    color :#95BD41;
+    opacity: 1;
+  }
   /*Services*/
   .services-container {
     display: flex;
@@ -205,11 +257,16 @@ nav a:hover {
     justify-content: center;
     margin-top: 50px;
 }
-
+.Ser{
+  
+  text-align: center; 
+  font-size: 32px;
+}
 .sercont {
-    background-color: #f5f5f5;
+    background-color: #f7eeff;
     box-sizing: border-box;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .service {
@@ -228,7 +285,7 @@ nav a:hover {
 
 /* Style for service titles */
 .service h3 {
-    margin-top: 10px;
+  margin-top: 10px;
     font-size: 1.2em;
 }
 
@@ -259,7 +316,8 @@ nav a:hover {
 
   /* why*/
   .why-home-physio {
-    background-color: #f5f5f5;
+    background-color: #f7edff;
+    
     padding: 40px;
     text-align: center;
     border-radius: 10px;
@@ -270,7 +328,7 @@ nav a:hover {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #333;
+    color: #111111;
   }
   
   .why-home-physio p {
@@ -317,7 +375,12 @@ nav a:hover {
     background-color: #ffffff;
     margin-top: 50px;
   }
-  
+  .doctor-image{
+    background-color:#D1C9D8;
+    padding: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
   .doctor-bio img {
     width: 350px;
     height: 350px;
@@ -338,15 +401,16 @@ nav a:hover {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #333;
+    color: #9F6CDA;
     margin-top: -70px;
     margin-left: 70px;
+    
   }
   
   .doctor-bio p {
     font-size: 18px;
     line-height: 1.6;
-    color: #666;
+    color: #111111;
     margin-right: 70px;
     margin-left: 70px;
   }
@@ -387,6 +451,7 @@ nav a:hover {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
+    color:#9F6CDA;
   }
   
   .home-physio-map p {
@@ -412,13 +477,19 @@ nav a:hover {
   #map {
     width: 60%; 
     height: 450px;
-    border: 1px solid #ccc;
+    border: 0px;
     border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px ;
     overflow: hidden;
     margin-left: -150px; 
-    margin-right: 80px;
-    width: 50%; /* Set the width of the map container */
+    
+    /* Set the width of the map container */
     float: right;
+    background-color:#D1C9D8;
+    padding: 30px;
+    padding-right: 90px;
+    /*background-image: linear-gradient(to right, #D1C9D8, #9f6cda);*/
   }
   
   
@@ -426,6 +497,8 @@ nav a:hover {
     width: 100%;
     height: 100%;
     border: 0;
+    border-radius: 10px;
+
   }
   @media screen and (max-width: 767px) {
     .home-physio-map {
@@ -465,8 +538,8 @@ nav a:hover {
   
   /*Footer*/
   footer {
-    background-color: #133A74;
-    color: #fff;
+    background-color: #D1C9D8;
+    color: #111111;
     padding: 30px 0;
   }
   
@@ -507,10 +580,14 @@ nav a:hover {
   }
   
   .footer-section ul li a {
-    color: #fff;
+    color: #111111;
     text-decoration: none;
   }
   
   .footer-section ul li a:hover {
     text-decoration: underline;
+  }
+  .copyright {
+    text-align: center;
+    font-size: smaller;
   }
