@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link  rel="stylesheet" href="About.css"/>
+</head>
+<body id="home-page" >
+  
+  <div class="header-container" id="header-container">
+    <div class="title-container">
+      <h1 class="title" alt="title" id="title">Home Physiotherapy Services Wales</h1>
+      </div>
+        <a href="index.html"><img class="logo" src="ologo.png" alt="Home Physiotherapy Services" class="logo"></a>
+        <a href="index.html"><img class="logo1" src="word.png" alt="Home Physiotherapy Services1" class="logo1"></a>
+         <!-- <img class="top-image" src="menu.png" alt="TopImage">-->
+         
+          <nav>
+            <!--<div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            </div>-->
+            <div class="contact-infos">
+              <p>Email: <a href="mailto:Homephysioservices@hotmail.com">Homephysioservices@hotmail.com</a></p>
+              <p>Phone: <a href="tel:+4407565136488">+44 07565136488</a></p>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    <div id="mobileContent" style="display: none;">
+      <!-- HTML content for mobile view -->
+      <button class="butt" onclick="toggleNav()"></button>
+      <nav id="navList">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </div>
+  
+  
+    <script>
+      // When the user scrolls down 50px from the top of the document, resize the header and logo
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        var headerContainer = document.getElementById("header-container");
+        var logo = document.getElementsByClassName("logo")[0];
+        var title = document.getElementById("title");
+        var logo1 = document.getElementsByClassName("logo1")[0];
+        var contactinfos = document.getElementsByClassName("contact-infos")[0];
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          
+          logo.style.height = "100px";
+          logo.style.width = "100px";
+          logo1.style.height = "130px";
+          logo1.style.width = "130px";
+          contactinfos.style.display = "none";
+          logo1.style.display = "inline";
+          title.style.display = "none";
+        } else {
+          
+          logo.style.height = "180px";
+          logo.style.width = "180px";
+          logo1.style.height = "140px";
+          logo1.style.width = "140px";
+          logo1.style.display = "none";
+          contactinfos.style.display = "inline";
+          title.style.display = "block";
+        }
+      }
+  </script>
+  
+  
+  <script>
+    // JavaScript to toggle navigation list on mobile
+    function toggleNav() {
+      var navList = document.getElementById("navList");
+      if (navList.style.display === "none" || navList.style.display === "") {
+        navList.style.display = "block";
+      } else {
+        navList.style.display = "none";
+      }
+    }
+    
+    // JavaScript to show content only on mobile
+    if (window.innerWidth <= 767) { // Adjust the breakpoint as needed
+      document.getElementById("mobileContent").style.display = "block";
+    }
+    </script>
+    <div class="content" style="padding-top: 150px;">
+    <div class="bcontainer" >
+        <img src="Rajeev.webp" alt="Physiotherapy Image">
+        <h1 class="hetch">About Us</h1>
+        <p class="pa">Welcome to Home Physiotherapy Services Wales!</p>
+        <p class="pa">I am Rajeev, a dedicated physiotherapist with over 20 years of experience in both NHS and private settings helping people achieve their full potential and live pain-free lives. I am passionate about providing high-quality, individualized care to patients of all ages and backgrounds.</p>
+        
+        <h2 class="hetch">My Philosophy</h2>
+        <p class="pa">My approach to physiotherapy is centred around understanding your unique needs and goals. I believe in creating a collaborative environment where we can work together to develop a personalized treatment plan that addresses your specific condition and gets you back to doing the things you love. The convenience of home physiotherapy allows me to bring this personalized care directly to you, eliminating the stress and hassle of traveling to a clinic. This can be especially beneficial if you're experiencing pain or mobility limitations that make getting around difficult. In the comfort of your own home, we can focus entirely on your recovery and get you back<br> on track to living your life to the fullest.</p>
+        
+        <h2 class="hetch">My Services</h2>
+        <ul class="ulli">
+            <li>Musculoskeletal Injury Rehabilitation</li>
+            <li>Operative Orthopaedic Rehabilitation</li>
+            <li>Falls Assessment, Prevention, and Rehabilitation</li>
+            <li>Rehabilitation for Elderly Frailty</li>
+            <li>Neurological Rehabilitation</li>
+        </ul>
+        
+        <h2 class="hetch">Why Choose Me?</h2>
+        <ul class="ulli">
+            <li><strong>Experienced and Qualified:</strong> I have a wealth of experience and possess the necessary qualifications to provide effective physiotherapy care.</li>
+            <li><strong>Personalized Approach:</strong> I take the time to understand your individual needs and goals to develop a treatment plan that is right for you.</li>
+            <li><strong>Commitment to Continuous Learning:</strong> I am dedicated to staying up-to-date on the latest advancements in physiotherapy to ensure you receive the most effective treatment available.</li>
+            <li><strong>Convenience of In-Home Care:</strong> I come directly to you, eliminating the need to travel to a clinic and saving you valuable time and energy. This is especially beneficial if you have difficulty getting around, are recovering from surgery, or simply prefer the comfort and privacy of your own home.</li>
+        </ul>
+        
+        <p class="pa"><strong>Ready to Get Started?</strong> If you are experiencing pain or limitations that are affecting your daily life, I can help. Contact me today to schedule an appointment and learn more about how physiotherapy can help you achieve your goals.</p>
+        
+        <p class="pa"><strong>Contact us today</strong> to schedule an appointment and experience the benefits of home physiotherapy!</p>
+    </div>
+    </div>
+</body>
+<footer>
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-sectionabout">
+              <h2>Mission</h2>
+              <p>Empowering Recovery, One Home at a Time.</p>
+          </div>
+          <div class="footer-section links">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="Services.html">Services</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <h2>Contact Us</h2>
+              <p>Email: <a href="mailto:Homephysioservices@hotmail.com">Homephysioservices@hotmail.com</a></p>
+              <p>Phone: <a href="tel:+4407565136488">+44 07565 136488</a></p>
+          </div>
+      </div>
+  </div>
+  <div class="logoj">
+    <a href="https://jaesit.com"><img src="logo1.svg"/></a>
+    <p>Designed and developed by <a href="https://jaesit.com">JAES Solutions</a>, Harlow, UK</p>
+    <p>Email: <a href="mailto:info@jaesit.com">info@jaesit.com</a></p>
+    <p>Phone: <a href="tel:+44 01279897648">+44 01279897648</a></p>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Home Physiotherapy Services Wales. All rights reserved.</p>
+  </div>
+  
+</footer>
+</html>

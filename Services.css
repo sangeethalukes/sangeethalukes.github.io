@@ -1,0 +1,350 @@
+.logo {
+  height: 140px; 
+  width: 140px;
+  transition: 0.3s;
+  margin-top: -30px;
+  top: 0;
+}
+.logo1 {
+  height: 150px; 
+  width: 150px;
+  transition: 0.2s;
+  margin-top: -40px;
+  top: 0;
+  display: none;
+  margin-bottom: -15px;
+}
+.title{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: -30px;
+  font-family: 'Times New Roman', Times, serif;
+  width:100%;
+}
+.top-image {
+  height: 100px;
+  transition: 0.2s;
+}
+
+.header-container{
+  position: fixed;
+  top:0;
+  width:100%;
+  background-color:white;
+  padding: 20px 10px;
+    align-items: center;
+    box-shadow: 1px 5px 20px #b1b1b1;
+}
+
+nav {
+  overflow: hidden;
+  text-align: center;
+  top: 0;
+  margin-top: -90px;
+  margin-bottom: -10px;
+  font-size: 20px;
+
+}
+
+nav a {
+  display: inline-block;
+  color: #777777;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+nav a:hover {
+  
+  opacity: 1;
+  color: #9F6CDA;
+  padding: 20px 20px;
+  border-bottom: 2px solid #9F6CDA;
+  
+}
+.social-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  margin: 0 5px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+.social-icons a:hover {
+  border-bottom:none;
+}
+/*.contact-infos {
+  
+  flex-direction: column; 
+  text-align: right;
+  
+font-size: 5px;
+}*/
+
+.contact-infos p {
+  text-align: right;
+margin-top: -22px;
+margin-bottom: -20px;
+margin-left: -100px;
+margin-right: 5px;
+font-size: 15px;
+top:0;
+}
+
+.contact-infos a {
+  color: #777777;
+  text-decoration: none;
+}
+
+.contact-infos a:hover {
+  border-bottom:none;
+}
+
+.line{
+  border: 1px solid black; /* Set the border style */
+  
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000;
+    background-color: #fff; /* Adjust this value as needed */
+  }
+  
+  .logo {
+    width: 75px;
+    height: 75px; /* Set smaller width for the logo on mobile devices */
+  }
+
+  .header-text {
+    display:inline-flex; /* Ensure header text is displayed inline */
+    font-size: 20px;
+    margin-right: 1px;
+    /* Adjust the font size of the header text */ /* Add spacing between the header text and the button */
+  }
+
+  .butt {
+    display: inline-block; /* Ensure button is displayed inline */
+    padding: 15px 20px; /* Blue color for the button */
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 20px;
+    cursor: pointer;
+    background-image: url('menu.png'); /* Add the path to your image */
+    background-size: cover;
+    background-position: center;
+  }
+  nav a {
+    display: none;
+  }
+
+  /* Style for the navigation list */
+  #navList {
+    overflow: hidden;
+    display: none; /* Initially hide the navigation list */
+    position: absolute; /* Position the dropdown list */
+    top: 100%; /* Align the top of the list with the bottom of the button */
+    left: 200px; /* Position the list to the left of the button */
+   /* Align the left of the list with the left of the button */
+    width: 100%; /* Make the dropdown list as wide as the button */
+    background-color: #fff; /* Adjust background color */
+    border: 1px solid #ddd; /* Add border */
+    border-top: none; /* Center the list items */
+  }
+
+  /* Style for the navigation links */
+  #navList a {
+    display: block;
+    padding: 10px 10px;
+    color: #333; /* Dark color for the navigation links */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    text-align: left; /* Smooth transition for background color */
+  }
+
+  /* Hover effect for navigation links */
+  #navList a:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+  }
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Set the width to 100% of the viewport width */
+max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+margin: 0 auto;
+margin-top: 20px;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.sercont {
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.sercont h2{
+  color:#002152;
+}
+
+.service {
+  width: 30%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.service img {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Style for service titles */
+.service h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #002152;
+}
+
+/* Style for service links */
+.service h3 a {
+  color: #002152;
+  text-decoration: none;
+}
+
+/* Hover effect for service links */
+.service h3 a:hover {
+  text-decoration: underline;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .service {
+      width: 100%; /* Set the width to 100% for mobile devices */
+  }
+}
+
+  
+  #FallsAssessmentPreventionandRehabilitation{
+    padding-top: 100px; 
+  }
+  #OperativeOrthopaedicRehabilitation{
+    padding-top: 100px; 
+  }
+  #MusculoskeletalInjuryRehabilitation{
+    padding-top: 100px;
+  }  
+  #RehabilitationforElderlyFrailty{
+    padding-top: 100px;
+  }
+  #NeurologicalRehabilitation{
+    padding-top: 100px;
+  }
+  .stuff{
+    padding-left:20px;
+    padding-right: 50px;
+    
+  }
+
+
+  /*footer*/
+  footer {
+    background-color: #D1C9D8;
+    color: #111111;
+    padding: 30px 0;
+  }
+  
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  .footer-sectionabout{
+  margin-right: 20px;
+  }
+  .footer-section h2 {
+    font-size: 18px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #111111;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 40px;
+  }
+  .logoj {
+    float: right;
+    margin-top: -90px;
+    margin-right: 100px;
+  }
+  
+  .logoj img {
+    width: 100px; /* Adjust size as needed */
+  }
+  
+  .logoj p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
