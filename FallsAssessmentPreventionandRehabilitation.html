@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falls Assessment Prevention and Rehabilitation</title>
+    <link  rel="stylesheet" href="Servicescss.css"/>
+    <style>
+      @media screen and (max-width: 767px) {
+        .Falls{
+          padding:0;
+          margin: 0;
+
+        }
+      }
+    </style>
+</head>
+<body>
+  <body id="home-page" >
+  
+    <div class="header-container" id="header-container">
+      <div class="title-container">
+        <h1 class="title" alt="title" id="title">Home Physiotherapy Services Wales</h1>
+        </div>
+          <a href="index.html"><img class="logo" src="ologo.png" alt="Home Physiotherapy Services" class="logo"></a>
+          <a href="index.html"><img class="logo1" src="word.png" alt="Home Physiotherapy Services1" class="logo1"></a>
+           <!-- <img class="top-image" src="menu.png" alt="TopImage">-->
+           
+            <nav>
+              <!--<div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+              </div>-->
+              <div class="contact-infos">
+                <p>Email: <a href="mailto:Homephysioservices@hotmail.com">homephysioservices@hotmail.com</a></p>
+                <p>Phone: <a href="tel:+4407565136488">+44 07565136488</a></p>
+              </div>
+              <a href="index.html">Home</a>
+              <a href="Services.html">Services</a>
+              <a href="About.html">About</a>
+              <a href="Contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+        <div class="mobileContent" >
+          <!-- HTML content for mobile view --><a href="index.html"><img class="logo" src="ologo.png" alt="Home Physiotherapy Services" class="logo"></a>
+          <div class="title-container">
+            <h1 class="title" alt="title" id="title">Home Physiotherapy Services Wales</h1>
+            </div>
+              
+              <a href="index.html"><img class="logo1" src="word.png" alt="Home Physiotherapy Services1" class="logo1"></a>
+          <div class="mobile-nav-container">
+            <button class="butt" onclick="toggleNav()"></button>
+            <nav id="navList">
+              <a href="index.html">Home</a>
+              <a href="Services.html">Services</a>
+              <a href="About.html">About</a>
+              <a href="Contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+    
+    
+      <script>
+        // When the user scrolls down 50px from the top of the document, resize the header and logo
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          var headerContainer = document.getElementById("header-container");
+          var logo = document.getElementsByClassName("logo")[0];
+          var title = document.getElementById("title");
+          var logo1 = document.getElementsByClassName("logo1")[0];
+          var contactinfos = document.getElementsByClassName("contact-infos")[0];
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            
+            logo.style.height = "100px";
+            logo.style.width = "100px";
+            logo1.style.height = "130px";
+            logo1.style.width = "130px";
+            contactinfos.style.display = "none";
+            logo1.style.display = "inline";
+            title.style.display = "none";
+          } else {
+            
+            logo.style.height = "180px";
+            logo.style.width = "180px";
+            logo1.style.height = "140px";
+            logo1.style.width = "140px";
+            logo1.style.display = "none";
+            contactinfos.style.display = "inline";
+            title.style.display = "block";
+          }
+        }
+    </script>
+    
+  <script>
+    // JavaScript to toggle navigation list on mobile
+    function toggleNav() {
+      var navList = document.getElementById("navList");
+      if (navList.style.display === "none" || navList.style.display === "") {
+        navList.style.display = "block";
+      } else {
+        navList.style.display = "none";
+      }
+    }
+    
+    // JavaScript to show content only on mobile
+    if (window.innerWidth <= 767) { // Adjust the breakpoint as needed
+      document.getElementById("mobileContent").style.display = "block";
+    }
+    </script>
+<div class="Falls" id="FallsAssessmentPreventionandRehabilitation">
+    <h1>Falls Assessment, Prevention, and Rehabilitation</h1>
+    <p>Falls are a significant global health concern, recognized by the World Health Organisation (WHO) as the second leading cause of unintentional injury deaths worldwide. Annually, approximately 684,000 individuals lose their lives due to falls, with the majority of these fatalities occurring in low- and middle-income countries. The elderly population, those aged 60 and above, are particularly vulnerable, experiencing the highest rates of fatal falls. Furthermore, every year around 37.3 million falls are severe enough to require medical intervention. The WHO advocates for prevention strategies that encompass education, training, environmental safety improvements, and dedicated fall-related research.</p>
+    <img src="Falls.jpg" style="width:50%; display: block; margin: 0 auto;">
+    <h2>Common Causes of Falls</h2>
+    <ul>
+        <li>Muscle Weakness: Reduced muscle strength, especially in the legs and core, can affect an individual's balance and stability.</li>
+        <li>Balance Disorders: Issues like vertigo or neurological disorders can impair balance and coordination.</li>
+        <li>Medication Side Effects: Drugs causing dizziness or blood pressure fluctuations can increase fall risk.</li>
+        <li>Vision Impairment: Poor or impaired vision can lead to difficulties in navigating environments safely.</li>
+        <li>Environmental Hazards: Obstacles and unsafe conditions in living spaces can significantly raise the risk of falls.</li>
+        <li>Foot Problems: Conditions affecting the feet or inappropriate footwear can disrupt balance.</li>
+        <li>Chronic Conditions: Diseases like arthritis or diabetes can compromise physical stability or mobility.</li>
+        <li>Age-Related Changes: Declines in physical attributes with age can heighten fall risk.</li>
+        <li>Cognitive Impairment: Cognitive issues can affect spatial awareness and decision-making.</li>
+        <li>Dehydration or Malnutrition: Lack of proper hydration or nutrition can lead to physical weakness or dizziness.</li>
+    </ul>
+
+    <h2>Our Approach to Fall Prevention</h2>
+    <ul>
+        <li>Comprehensive Assessments: Identifying the specific causes and risk factors for falls.</li>
+        <li>Personalised Prevention Plans: Creating tailored protocols aimed at mitigating fall risk.</li>
+        <li>Rebuilding Confidence: Helping patients regain trust in their mobility and independence.</li>
+        <li>Identifying Underlying Factors: Addressing both evident and subtle contributors to fall risk.</li>
+        <li>Support and Aids: Providing the necessary tools and support systems to ensure patient safety.</li>
+        <li>Improving Overall Well-Being: Enhancing both physical and mental health to support stability and mobility.</li>
+        <li>Restoring Functionality: Aiming to return patients to their pre-fall levels of function and mobility with confidence.</li>
+    </ul>
+
+    <p>Through this approach, we aim to significantly reduce the risk of falls, ensuring our patients can live safer, more confident lives.</p>
+</div>
+
+
+
+
+
+   
+</body>
+<footer>
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-sectionabout">
+              <h2>Mission</h2>
+              <p>Empowering Recovery, One Home at a Time.</p>
+          </div>
+          <div class="footer-section links">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="Services.html">Services</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <h2>Contact Us</h2>
+              <p>Email: <a href="mailto:Homephysioservices@hotmail.com">homephysioservices@hotmail.com</a></p>
+              <p>Phone: <a href="tel:+4407565136488">+44 07565 136488</a></p>
+          </div>
+      </div>
+  </div>
+  <div class="logoj">
+    <a href="https://jaesit.com"><img src="logo1.svg"/></a>
+    <p>Designed and developed by <a href="https://jaesit.com">JAES Solutions</a>, Harlow, UK</p>
+    <p>Email: <a href="mailto:info@jaesit.com">info@jaesit.com</a></p>
+    <p>Phone: <a href="tel:+44 01279897648">+44 01279897648</a></p>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Home Physiotherapy Services Wales. All rights reserved.</p>
+  </div>
+  
+</footer>
+</html>
